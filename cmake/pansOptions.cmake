@@ -4,7 +4,7 @@ target_compile_options(pans_options INTERFACE
     #GCC/Clang通用模板
     $<$<OR:$<CXX_COMPILER_ID:GNU>,$<CXX_COMPILER_ID:Clang>>:
         -Wall
-        -Wwxtra
+        -Wextra
         -Wpedantic
         -fno-strict-aliasing
     >
